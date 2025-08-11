@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: linguapi
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
