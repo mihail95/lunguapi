@@ -18,5 +18,5 @@ def intro():
     }
 
 # --- Uncomment when you add bronze router ---
-from bronze import router as bronze_router
-app.include_router(bronze_router, prefix="/bronze", tags=["Bronze Tier"])
+from app import bronze
+app.include_router(bronze.router, prefix="/bronze", tags=["Bronze Tier"])
